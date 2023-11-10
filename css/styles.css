@@ -11,16 +11,14 @@ body {
   button {
     cursor: pointer;
   }  
-ul, a {
-    list-style-type: none;
-    text-decoration: none;
-    }
+
     /* header */
 .list {
     list-style-type: none;
   }  
 .link {
     text-decoration: none;
+
   }  
 
   .logo {
@@ -47,6 +45,10 @@ ul, a {
   line-height: 1.14;   
 }
 /* hero section */
+.hero-section { 
+  background: rgba(17, 17, 17, 0.40);
+
+}
 .hero-title {
   color: #FFF;
   font-size: 28px;
@@ -58,10 +60,26 @@ ul, a {
   color: #FFF;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  background-color: #FD9222;
+}
+.hero-btn:focus, .hero-btn:hover { 
+  border-radius: 100px;
+  background-color: #FCF1E0;
+  color: #FD9222;
+
 }
 .hero-link {
   color: #FFF;
   font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #FFF;
+
+}
+.hero-link:focus, .hero-link:hover  {
+  border-radius: 100px;
+  border: 1px solid #FD9222;
+  color: #FD9222;
 }
 .hero-link-scroll {
   color: #FFF;  
@@ -91,5 +109,202 @@ ul, a {
 }
 .benefits-menu-prgf {
 color: rgba(255, 255, 255, 0.70);
+
+}
+.benefits-menu-item {
+
+}
+/* section ingredients */
+.ingredients {
+
+}
+.ingredients-tast {
+  color: #FD9222;
+
+}
+.ingredients-title {
+  color:   #111;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17; 
+  letter-spacing: -0.03;
+  text-transform: uppercase;
+}
+.ingredients-prgf {
+  color: #111;
+  text-align: center;
+  line-height: 1.29; 
+
+}
+.ingredients-menu {
+  border-radius: 15px;
+}
+.ingredients-menu-item-first {  
+  background: #FD9222;
+
+}
+.ingredients-menu-item-second {
+  border: 1px solid #FD9222;
+  background: #FFF;
+
+}
+.ingredients-menu-item-third {
+  background: #1E1823;
+
+}
+
+.ingredients-menu-item-fourth {
+  border: 1px solid #FD9222;
+  background: #FFF;
+
+}
+.ingredients-img {
+
+}
+.ingredients-menu-title {
+  color: #FFF;
+  font-weight: 600;
+  line-height: 1.29; 
+  text-transform: uppercase;
+}
+.ingredients-menu-title-black {
+  color: #111;
+}
+/* section how made */
+.how-made {
+
+}
+.how-made-title {
+  color: #111;
+font-size: 24px;
+font-weight: 600;
+line-height: 1.17; 
+letter-spacing: -0.03;
+text-transform: uppercase;
+}
+.how-made-made {
+  color: #FD9222;
+}
+.how-made-img {
+  border-radius: 15px;
+}
+.how-made-title-secondary {
+  color: #111;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.33;
+}
+.how-made-menu {
+
+}
+.how-made-menu-item {
+  color: #111;
+
+}
+/* section reviews */
+.reviews {
+
+}
+.reviews-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17; 
+  letter-spacing: -0.03;
+  text-transform: uppercase;
+  color: #111;
+}
+.reviews-title-choco {
+  color: #FD9222;
+
+}
+.reviews-menu {
+
+}
+.reviews-menu-item {
+
+}
+.reviews-img {
+
+}
+.reviews-menu-item-title {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.reviews-menu-item-prgf {
+  color: rgba(17, 17, 17, 0.70);
+  text-align: center;
+
+}
+.reviews-btn {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #FD9222;
+
+}
+.reviews-btn:focus, 
+.reviews-btn:hover {
+  color: #FFF;
+  border-radius: 100px;
+  background: #FD9222;
+}
+/* footer */
+.footer {
+  background-color: #1E1823;
+}
+.footer-prgf {
+  color: #FD9222;
+
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 121.429% */
+  letter-spacing: -0.56px;
+}
+.footer-prgf-span {
+  color: #FFF;
+}
+.footer-title {
+  color: #FFF;  
+  text-align: center; 
+  font-weight: 500;
+
+}
+.footer-menu {
+
+}
+.footer-menu-item { 
+  color: #FFF;  
+  font-weight: 500;
+  line-height: 1.14;
+  
+}
+.footer-adress {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer-nav {
+
+}
+.footer-list-nav {
+
+}
+.footer-list-nav-item {
+  color: #FFF;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: -0.28px;
+}
+.footer-link-nav {
 
 }
