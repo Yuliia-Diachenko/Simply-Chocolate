@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPLY CHOCOLATE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!--header -->
+    <!--header -->    
     <header class="page-header">
+    <div class="container header-container">
     <nav class="page-nav">
         <a class="logo link" href="./index.html"><i>SIMPLY</i> CHOCOLATE</a>
         <ul class="menu list">
@@ -23,24 +24,30 @@
             <li class="menu-item"><a class="menu-link link" href="#reviews">Chocolate is loved</a></li>
         </ul>
     </nav>
+    </div>
     </header>
+
     <main>
 
  <!-- section Hero -->
 
 <section class="hero-section">
+<div class="container">
 <h1 class="hero-title">Treat yourself or a loved one to 
     our finest ingredients for a moment 
     of pure delight!</h1>
-<button class="hero-btn" type="button">Buy now</button>
-<a class="hero-link" href="">How it’s made</a>
-<a class="hero-link-scroll" href="#benefits">scroll down</a>
+<div class="container-btn">
+    <button class="hero-btn" type="button">Buy now</button>
+<div class="container-btn-first"><a class="hero-link link" href="">How it’s made</a>
+<a class="hero-link-scroll link" href="#benefits">scroll down</a>
+</div></div></div>
 </section>
 
 <!-- section benefits-->
 
 <section class="benefits" id="benefits">
-<h2 class="benefits-title">Our benefits</h2>
+    <div class="container">
+<h2 class="benefits-title visually-hidden">Our benefits</h2>
 <ul class="benefits-menu">
 <li class="benefits-menu-item">
     <h3 class="benefits-menu-title">Unsurpassed taste</h3>
@@ -60,35 +67,37 @@
         We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
     </p>
 </li>
-</ul>
+</ul></div>
 </section>
 <!-- section ingredients -->
 <section class="ingredients">
+    <div class="container">
     <h2 class="ingredients-title">it all adds up to one exceptional <span class="ingredients-tast">taste</span> sensation</h2>
     <p class="ingredients-prgf">
         At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
     </p>
     <ul class="ingredients-menu">
-        <li class="ingredients-menu-item-first">
+        <li class="ingredients-menu-item-first list">
             <img class="ingredients-img" src="./images/ingredients/milk-chocolate.png" alt="milk chocolate" width="206" height="160">
             <h3 class="ingredients-menu-title">milk chocolate</h3>
         </li>
-        <li class="ingredients-menu-item-second">
+        <li class="ingredients-menu-item-second list">
             <img class="ingredients-img" src="./images/ingredients/milk.png" alt="milk" width="206" height="160">
             <h3 class="ingredients-menu-title ingredients-menu-title-black">milk</h3>
         </li>
-        <li class="ingredients-menu-item-third">
+        <li class="ingredients-menu-item-third list">
             <img class="ingredients-img" src="./images/ingredients/nuts.png" alt="nuts" width="206" height="160">
             <h3 class="ingredients-menu-title">nuts</h3>
         </li>
-        <li class="ingredients-menu-item-fourth">
+        <li class="ingredients-menu-item-fourth list">
             <img class="ingredients-img" src="./images/ingredients/semi-sweet-chocolate.png" alt="semi sweet chocolate" width="206" height="160">
             <h3 class="ingredients-menu-title ingredients-menu-title-black">semi sweet chocolate</h3>
         </li>
-    </ul>
+    </ul></div>
     </section>\
     <!-- section how-made -->
     <section class="how-made" id="how-made">
+        <div class="container">
         <h2 class="how-made-title">how it`s<span class="how-made-made"> made?</span></h2>
         <img class="how-made-img" src="./images/how-made/how-made.jpg" alt="making hot chocolate">
         <h3 class="how-made-title-secondary">Try  our chocolates today and discover the perfect balance of flavor</h3>
@@ -98,10 +107,11 @@
             <li class="how-made-menu-item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
             <li class="how-made-menu-item">Heat the mixture over low heat, letting it barely boil.</li>
             <li class="how-made-menu-item">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
-        </ul>
+        </ul></div>
     </section>
     <!-- section reviews -->
     <section class="reviews" id="reviews">
+        <div class="container">
         <h2 class="reviews-title"><span class="reviews-title-choco">chocolate</span> is loved</h2>
         <ul class="reviews-menu">
         <li class="reviews-menu-item"><img class="reviews-img" src="./images/reviews/victoria-dobrzhanska.png" alt="Victoria Dobrzhanska">
@@ -112,22 +122,25 @@
             <h3>Nazar Babenko</h3>
             <p class="reviews-menu-item-prgf">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
         </li>
-        <li lass="reviews-menu-item"><img class="reviews-img" src="./images/reviews/olena-kampusch.png" alt="Olena Kampusch">
+        <li class="reviews-menu-item"><img class="reviews-img" src="./images/reviews/olena-kampusch.png" alt="Olena Kampusch">
             <h3>Olena Kampusch</h3>
             <p class="reviews-menu-item-prgf"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
         </li>
     </ul>
         <button class="reviews-btn" type="button">Leave  a review</button>
+    </div>
     </section>
 
     </main>
     <!-- footer -->
     <footer class="footer">
+        <div class="container">
     <p class="footer-prgf">
         Chocolate<span class="footer-prgf-span"> a delicious cure for a bad day</span> 
     </p>
-    <address class="footer-adress">
+   
     <h3 class="footer-title">Contact us</h3>
+    <address class="footer-adress">
     <ul class="footer-menu">
         <li class="footer-menu-item"><a class="link footer-adress" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
         <li class="footer-menu-item"><a class="link footer-adress" href="mailto:simplycthoc@gmail.com">simplycthoc@gmail.com</a></li>
@@ -139,7 +152,7 @@
             <li class="footer-list-nav-item"><a class="link footer-link-nav" href="">How it’s made?</a></li>
             <li class="footer-list-nav-item"><a class="link footer-link-nav" href="">Chocolate is loved</a></li>
         </ul>
-    </nav>
+    </nav></div>
     </footer>
 
 </body>
