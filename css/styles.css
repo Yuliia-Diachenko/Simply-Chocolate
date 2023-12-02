@@ -1,3 +1,15 @@
+/* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #111;
@@ -23,17 +35,12 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
-    /* header */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-      margin: 0;
-      margin-bottom: 0;
-    }
+  
+  img {
+    display: block;
+  }
+    /* ====================  header  ======================*/
+ 
     .page-header {
       border-bottom: 1px solid #e7e9fc;  
     }
@@ -92,9 +99,17 @@ body {
   line-height: 1.14;
   
 }
-/* hero section */
-.hero-section { 
-  background: rgba(17, 17, 17, 0.40);
+/* =================  hero section  ====================== */
+.hero-section-container { 
+background: rgba(17, 17, 17, 0.40);
+background-image: url(../images/chocolate-covered-cocoa-powder.jpg);
+background-repeat: no-repeat;
+width: 1136px;
+padding: 381px 40px 40px 40px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 30px;
+
   
 }
 .hero-title {
@@ -103,17 +118,19 @@ body {
   font-weight: 500;
   line-height: 1.21; 
   letter-spacing: -0.03;
-  padding-left: 40px;
   width: 484px;
   padding-bottom: 32px;
+
+ 
 }
 .container-btn-first {
- 
+ display: inline-flex;
+ align-items: center;
 }
 .container-btn {
   display: flex;
-  justify-content: baseline;
-  align-items: center;
+  align-items: flex-start;
+  gap: 14px;
 
 }
 
@@ -124,13 +141,10 @@ body {
   line-height: normal;
   border-radius: 100px;
   background-color: #FD9222;
-  margin-right: 14px;
-  position: fixed;
-  bottom: 40px;
-  left: 40px;
-  
+  padding: 14px 40px;
 
 }
+
 .hero-btn:focus, 
 .hero-btn:hover { 
   border-radius: 100px;
@@ -143,7 +157,7 @@ body {
   font-weight: 600;
   border-radius: 100px;
   border: 1px solid #FFF;
-  margin-right: 585px;
+  padding: 14px 40px;
 
 }
 .hero-link:focus, .hero-link:hover  {
@@ -155,12 +169,24 @@ body {
   color: #FFF;  
   font-weight: 500;
   line-height: 1.29; 
-  letter-spacing: -0.03;
+  letter-spacing: -0.03em;
+  margin-left: 585px;
 }
 
-/* section benefits */
+/* ===========   section benefits   ============= */
+
 .benefits {
   background-color: #1E1823;
+  margin-top: 72px;
+  margin-bottom: 50px;
+  width: 1200px;
+  margin: 72px auto;
+
+}
+
+.benefits-container {
+
+padding: 50px;
 
 }
 .visually-hidden {
@@ -179,15 +205,18 @@ body {
 .benefits-title {
   color: #FFF;
   font-size: 18px;  
-  font-weight: 600;  
+  font-weight: 600; 
+  
 }
 .benefits-menu {
-
+  display: inline-flex;
+  gap: 70px;
 }
 .benefits-menu-title {
   color: #FFF;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 18px; 
 
 }
 .benefits-menu-prgf {
@@ -195,11 +224,11 @@ color: rgba(255, 255, 255, 0.70);
 
 }
 .benefits-menu-item {
-
+  width: 308px;
 }
-/* section ingredients */
+/* =============    section ingredients   =========== */
 .ingredients {
-
+margin-bottom: 100px;
 }
 .ingredients-tast {
   color: #FD9222;
@@ -211,31 +240,48 @@ color: rgba(255, 255, 255, 0.70);
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17; 
-  letter-spacing: -0.03;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
+  width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 }
 .ingredients-prgf {
   color: #111;
   text-align: center;
   line-height: 1.29; 
+  width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 
 }
-.ingredients-menu {
+.container-ingredients-title-prgph {
  
+}
+.ingredients-menu { 
   display: flex;
-  width: 1136px;
-  align-items: flex-start;
-  gap: 19px;
+  width: 1136px; 
+  justify-content: space-between;
+
   
-  padding: 28px 36px 28px 28px;
+
+}
+.ingredients-menu-item {
+padding: 28px 36px 28px 28px;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-margin-left: 32px;
+gap: 36px;
+display: flex;
 }
+
 .ingredients-menu-item-first {  
   background: #FD9222;
   border-radius: 15px;
+  
+
 
 
 }
@@ -277,11 +323,24 @@ margin-left: 32px;
 }
 .how-made-title {
   color: #111;
-font-size: 24px;
-font-weight: 600;
-line-height: 1.17; 
-letter-spacing: -0.03;
-text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17; 
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container-how-made {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 100px;
+
+}
+.container-how-made-title-menu {
+display: block;
+padding: 32px;
+
 }
 .how-made-made {
   color: #FD9222;
@@ -293,13 +352,15 @@ text-transform: uppercase;
   color: #111;
 font-size: 18px;
 font-weight: 600;
-line-height: 1.33;
+line-height: 1.33em;
+margin-bottom: 28px;
 }
 .how-made-menu {
 
 }
 .how-made-menu-item {
   color: #111;
+  margin-bottom: 24px;
 
 }
 /* section reviews */
@@ -311,7 +372,7 @@ line-height: 1.33;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.17; 
-  letter-spacing: -0.03;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
 }
@@ -319,20 +380,31 @@ line-height: 1.33;
   color: #FD9222;
 
 }
+.container-reviews {
+margin-top: 50px;
+margin-bottom: 50px;
+}
 .reviews-menu {
-
+  display: flex;
+  justify-content: space-around;
+ 
 }
 .reviews-menu-item {
-
+  width: 360px;
+  text-align: center;
+  list-style-type: none;
+  background-color:#FFF;
 }
 .reviews-img {
-
+margin: 0 140px 18px 140px;
 }
 .reviews-menu-item-title {
   color: #111;
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.33;
+  line-height: 1.33em;
+  margin-bottom: 24px;
+
 }
 .reviews-menu-item-prgf {
   color: rgba(17, 17, 17, 0.70);
@@ -344,8 +416,18 @@ line-height: 1.33;
   font-size: 18px;
   font-weight: 600;
   border-radius: 100px;
-  border: 1px solid #FD9222;
+  border: 1px solid #FD9222;  
+  width: 222px;
+  height: 50px;
+  padding: 14px 40px;
+  gap: 14px;
+  flex-shrink: 0;
 
+}
+.reviews-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 .reviews-btn:focus, 
 .reviews-btn:hover {
@@ -356,16 +438,26 @@ line-height: 1.33;
 /* footer */
 .footer {
   background-color: #1E1823;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.container-footer {
+  display: flex;
+   padding-top: 50px;
+   justify-content: space-between;
+   margin-bottom: 72px;
 }
 .footer-prgf {
   color: #FD9222;
-
   font-family: Montserrat;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
-  line-height: 34px; /* 121.429% */
-  letter-spacing: -0.56px;
+  line-height: 1.21em; /* 121.429% */
+  letter-spacing: -0.02em;
+  width: 300px;
 }
 .footer-prgf-span {
   color: #FFF;
@@ -374,6 +466,7 @@ line-height: 1.33;
   color: #FFF;  
   text-align: center; 
   font-weight: 500;
+  margin-bottom: 14px;
 
 }
 .footer-menu {
@@ -391,8 +484,22 @@ line-height: 1.33;
   color: #FFF;
   
 }
-.footer-nav {
+.contact-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 
+}
+.footer-list-nav {
+  display: flex;
+  justify-content: left;
+  gap: 24px;
+  padding-bottom: 68px;
+}
+.footer-nav-form-container {
+  display: flex;
+  justify-content: left;
+  
 }
 .footer-list-nav .link {
   color: #FFF;
